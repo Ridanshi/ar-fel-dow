@@ -1,0 +1,13 @@
+submit_time,invocation_delay,response_delay,function_duration,active_functions_request,active_functions_response,label
+1000,12,45,120,3,4,benign
+1050,15,50,110,3,4,benign
+1100,10,40,130,2,3,benign
+1150,14,48,125,3,3,benign
+1200,11,42,115,2,4,benign
+1250,13,46,122,3,4,benign
+1300,2,300,980,45,60,attack
+1350,1,320,1020,50,65,attack
+1400,3,290,950,42,58,attack
+1450,2,310,1000,48,62,attack
+1500,1,330,1010,52,66,attack
+1550,2,305,990,46,59,attack

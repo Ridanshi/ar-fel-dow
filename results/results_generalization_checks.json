@@ -1,0 +1,44 @@
+{
+  "coldstart_buckets": [
+    {
+      "bucket": "0",
+      "n": 617,
+      "n_attack": 7,
+      "accuracy": 0.9886547811993517,
+      "attack_recall": 0.0
+    },
+    {
+      "bucket": "1-2",
+      "n": 1111,
+      "n_attack": 18,
+      "accuracy": 0.9837983798379838,
+      "attack_recall": 0.0
+    },
+    {
+      "bucket": "3-9",
+      "n": 2948,
+      "n_attack": 55,
+      "accuracy": 0.9830393487109905,
+      "attack_recall": 0.12727272727272726
+    },
+    {
+      "bucket": "10-49",
+      "n": 371,
+      "n_attack": 348,
+      "accuracy": 0.9353099730458221,
+      "attack_recall": 0.9913793103448276
+    },
+    {
+      "bucket": "50+",
+      "n": 10809,
+      "n_attack": 10809,
+      "accuracy": 1.0,
+      "attack_recall": 1.0
+    }
+  ],
+  "temporal_split": {
+    "degenerate": true,
+    "train_attack_frac": 0.5728857142857143,
+    "test_attack_frac": 1.0
+  }
+}

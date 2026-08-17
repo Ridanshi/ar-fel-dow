@@ -1,0 +1,34 @@
+{
+  "catboost": {
+    "clean_accuracy": 0.9936470334876709,
+    "clean_attack_recall": 0.9926072784703787,
+    "clean_benign_recall": 0.9955025185895898,
+    "adversarial_accuracy_plain": 0.6127222016868846,
+    "adversarial_accuracy_robust": 1.0,
+    "adversarial_accuracy_plain_gan": 0.5318391074968917,
+    "adversarial_accuracy_robust_gan": 0.8861856917235122,
+    "baseline_clean_accuracy": 0.0,
+    "baseline_adversarial_accuracy": 0.0029906918915286133,
+    "financial_robustness_gap_plain": 6.345388358736133,
+    "financial_robustness_gap_robust": -0.12322467428962151,
+    "federated_clean_accuracy": 0.9936039625282653,
+    "federated_adversarial_accuracy": 0.6136294902382472,
+    "sample_narrative": "Session classified as benign with anomaly score 0.01. Primary contributing factors: ip_request_sequence_number and p95maxcpu. Estimated financial impact: $0.0000."
+  },
+  "gradient_boosting": {
+    "clean_accuracy": 0.9936685689673738,
+    "clean_attack_recall": 0.9927416915890991,
+    "clean_benign_recall": 0.9953226193331735,
+    "adversarial_accuracy_plain": 0.6131254410430458,
+    "adversarial_accuracy_robust": 1.0,
+    "adversarial_accuracy_plain_gan": 0.5349642125071407,
+    "adversarial_accuracy_robust_gan": 0.8861856917235122,
+    "baseline_clean_accuracy": 0.0,
+    "baseline_adversarial_accuracy": 0.0016129574246446453,
+    "financial_robustness_gap_plain": 6.33834690604438,
+    "financial_robustness_gap_robust": -0.12309558485403595,
+    "federated_clean_accuracy": 0.9936254980079682,
+    "federated_adversarial_accuracy": 0.6133942672804866,
+    "sample_narrative": "Session classified as benign with anomaly score 0.01. Primary contributing factors: ip_request_sequence_number and p95maxcpu. Estimated financial impact: $0.0000."
+  }
+}

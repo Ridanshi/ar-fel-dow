@@ -1,0 +1,20 @@
+[
+  {
+    "condition": "federated_unpoisoned",
+    "accuracy": 0.9935671039354188,
+    "attack_recall": 0.9931476372697339,
+    "benign_recall": 0.9945875730677636
+  },
+  {
+    "condition": "federated_poisoned",
+    "accuracy": 0.9935040363269425,
+    "attack_recall": 0.9927916703746552,
+    "benign_recall": 0.995237064299632
+  },
+  {
+    "condition": "centralized_poisoned",
+    "accuracy": 0.9653128153380424,
+    "attack_recall": 0.9513215270979799,
+    "benign_recall": 0.9993505087681316
+  }
+]
