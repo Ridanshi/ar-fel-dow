@@ -14,7 +14,8 @@ Retargets an adversarial-resilient federated ensemble architecture (originally d
 - `src/arfel_dow/` — the detection pipeline: stacked ensemble detector (XGBoost + RandomForest + CatBoost + MLP under a logistic-regression meta-learner), gradient and GAN-based adversarial attack suite, adversarial training defense, federated ensemble aggregation, LLM-pluggable narrative layer, and the Financial Robustness Gap metric (real AWS Lambda pricing).
 - `scripts/` — experiment entry points: full evaluation run, multi-seed statistical validation, the CatBoost-substitution ablation, generalization checks (cold-start / temporal split), the federated poisoning check, and figure generation.
 - `tests/` — unit tests for every module (`pytest`).
-- `data/fixtures/` — a small synthetic fixture used by the test suite. The real dataset (DoWTS, 187,088 rows) is not bundled here; see below.
+- `data/fixtures/` — a small synthetic fixture used by the test suite. The real dataset (DoWTS, 187,087 rows) is not bundled here; see below.
+- `extended_evaluation/` — code and result files for the extended analysis: threat-model and defense-comparison experiments, cost analysis, billing-aware mitigations, a self-hosted OpenWhisk experiment, a second public dataset, and adversarial training against query-only attacks. See its own README.
 - `results/` — result files from the multi-seed run, the CatBoost ablation, the generalization checks, the federated poisoning check, and the direct train/test overfitting check, kept for reproducibility.
 
 ## Dataset
@@ -39,7 +40,7 @@ pytest
 python scripts/run_experiment.py
 ```
 
-CPU-only; no GPU required. The full run (187,088 rows, 5-seed statistical validation via `scripts/run_multi_seed.py`) takes on the order of hours on a single machine, since the stacked ensemble is refit from scratch per seed.
+CPU-only; no GPU required. The full run (187,087 rows, 5-seed statistical validation via `scripts/run_multi_seed.py`) takes on the order of hours on a single machine, since the stacked ensemble is refit from scratch per seed.
 
 ## Key findings
 

@@ -1,0 +1,347 @@
+{
+ "seed": 45,
+ "plain": {
+  "clean": {
+   "w0": {
+    "attack_blocked": 0.9936239087074519,
+    "usd_leaked": 0.10930652767975098,
+    "usd_leaked_capped": 0.02191587211024063,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0028456248517903723,
+    "benign_ids_blocked": 0.003989361702127659
+   },
+   "w5": {
+    "attack_blocked": 0.9916620344635909,
+    "usd_leaked": 0.14819994733690245,
+    "usd_leaked_capped": 0.029426052761708045,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0016599478302110505,
+    "benign_ids_blocked": 0.0026595744680851063
+   },
+   "w10": {
+    "attack_blocked": 0.9902887224928882,
+    "usd_leaked": 0.1698242114542422,
+    "usd_leaked_capped": 0.03384029191792649,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0010078254683424236,
+    "benign_ids_blocked": 0.002216312056737589
+   },
+   "w20": {
+    "attack_blocked": 0.9866265572376811,
+    "usd_leaked": 0.22974421050817512,
+    "usd_leaked_capped": 0.045946026079681165,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0,
+    "benign_ids_blocked": 0.0
+   }
+  },
+  "rot3": {
+   "w0": {
+    "attack_blocked": 0.0,
+    "usd_leaked": 17.123430861606852,
+    "usd_leaked_capped": 3.421405481466747,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0028456248517903723,
+    "benign_ids_blocked": 0.003989361702127659
+   },
+   "w5": {
+    "attack_blocked": 0.0,
+    "usd_leaked": 17.123430861606852,
+    "usd_leaked_capped": 3.421405481466747,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0016599478302110505,
+    "benign_ids_blocked": 0.0026595744680851063
+   },
+   "w10": {
+    "attack_blocked": 0.0,
+    "usd_leaked": 17.123430861606852,
+    "usd_leaked_capped": 3.421405481466747,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0010078254683424236,
+    "benign_ids_blocked": 0.002216312056737589
+   },
+   "w20": {
+    "attack_blocked": 0.0,
+    "usd_leaked": 17.123430861606852,
+    "usd_leaked_capped": 3.421405481466747,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0,
+    "benign_ids_blocked": 0.0
+   }
+  },
+  "rot10": {
+   "w0": {
+    "attack_blocked": 0.083739332308799,
+    "usd_leaked": 16.137394570759383,
+    "usd_leaked_capped": 3.208487518691576,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0028456248517903723,
+    "benign_ids_blocked": 0.003989361702127659
+   },
+   "w5": {
+    "attack_blocked": 0.012654088872903247,
+    "usd_leaked": 16.91992796956575,
+    "usd_leaked_capped": 3.3800802964562164,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0016599478302110505,
+    "benign_ids_blocked": 0.0026595744680851063
+   },
+   "w10": {
+    "attack_blocked": 0.0,
+    "usd_leaked": 17.123430861606852,
+    "usd_leaked_capped": 3.421405481466747,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0010078254683424236,
+    "benign_ids_blocked": 0.002216312056737589
+   },
+   "w20": {
+    "attack_blocked": 0.0,
+    "usd_leaked": 17.123430861606852,
+    "usd_leaked_capped": 3.421405481466747,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0,
+    "benign_ids_blocked": 0.0
+   }
+  },
+  "rot30": {
+   "w0": {
+    "attack_blocked": 0.6658601183664127,
+    "usd_leaked": 5.970514793762428,
+    "usd_leaked_capped": 1.1837428389542228,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0028456248517903723,
+    "benign_ids_blocked": 0.003989361702127659
+   },
+   "w5": {
+    "attack_blocked": 0.5821534839616781,
+    "usd_leaked": 7.170159108017659,
+    "usd_leaked_capped": 1.4320151429933226,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0016599478302110505,
+    "benign_ids_blocked": 0.0026595744680851063
+   },
+   "w10": {
+    "attack_blocked": 0.5087793872412778,
+    "usd_leaked": 8.404794781466945,
+    "usd_leaked_capped": 1.6792338042110182,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0010078254683424236,
+    "benign_ids_blocked": 0.002216312056737589
+   },
+   "w20": {
+    "attack_blocked": 0.3573226956152111,
+    "usd_leaked": 10.9215884561464,
+    "usd_leaked_capped": 2.1860114706955556,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0,
+    "benign_ids_blocked": 0.0
+   }
+  },
+  "rot100": {
+   "w0": {
+    "attack_blocked": 0.8941895824477651,
+    "usd_leaked": 1.8886802529799056,
+    "usd_leaked_capped": 0.3746932921831368,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0028456248517903723,
+    "benign_ids_blocked": 0.003989361702127659
+   },
+   "w5": {
+    "attack_blocked": 0.8724781741490371,
+    "usd_leaked": 2.1846336117794687,
+    "usd_leaked_capped": 0.4365716197991984,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0016599478302110505,
+    "benign_ids_blocked": 0.0026595744680851063
+   },
+   "w10": {
+    "attack_blocked": 0.8467776215544583,
+    "usd_leaked": 2.6134266953594087,
+    "usd_leaked_capped": 0.5227786274816318,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0010078254683424236,
+    "benign_ids_blocked": 0.002216312056737589
+   },
+   "w20": {
+    "attack_blocked": 0.801360232809077,
+    "usd_leaked": 3.4057654895178127,
+    "usd_leaked_capped": 0.6804292061999231,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0,
+    "benign_ids_blocked": 0.0
+   }
+  }
+ },
+ "pgd_at": {
+  "clean": {
+   "w0": {
+    "attack_blocked": 0.991858221887977,
+    "usd_leaked": 0.14003451051343613,
+    "usd_leaked_capped": 0.028030196283532784,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.002015650936684847,
+    "benign_ids_blocked": 0.0026595744680851063
+   },
+   "w5": {
+    "attack_blocked": 0.989896347644116,
+    "usd_leaked": 0.17910086842125839,
+    "usd_leaked_capped": 0.03557496006709326,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0010671093194213896,
+    "benign_ids_blocked": 0.002216312056737589
+   },
+   "w10": {
+    "attack_blocked": 0.9882941503449629,
+    "usd_leaked": 0.20329201747661677,
+    "usd_leaked_capped": 0.04057008530198852,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.00035570310647379654,
+    "benign_ids_blocked": 0.0008865248226950354
+   },
+   "w20": {
+    "attack_blocked": 0.9847627767060132,
+    "usd_leaked": 0.2689244865225324,
+    "usd_leaked_capped": 0.05344549272558081,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0,
+    "benign_ids_blocked": 0.0
+   }
+  },
+  "rot3": {
+   "w0": {
+    "attack_blocked": 0.0,
+    "usd_leaked": 17.123430861606852,
+    "usd_leaked_capped": 3.421405481466747,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.002015650936684847,
+    "benign_ids_blocked": 0.0026595744680851063
+   },
+   "w5": {
+    "attack_blocked": 0.0,
+    "usd_leaked": 17.123430861606852,
+    "usd_leaked_capped": 3.421405481466747,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0010671093194213896,
+    "benign_ids_blocked": 0.002216312056737589
+   },
+   "w10": {
+    "attack_blocked": 0.0,
+    "usd_leaked": 17.123430861606852,
+    "usd_leaked_capped": 3.421405481466747,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.00035570310647379654,
+    "benign_ids_blocked": 0.0008865248226950354
+   },
+   "w20": {
+    "attack_blocked": 0.0,
+    "usd_leaked": 17.123430861606852,
+    "usd_leaked_capped": 3.421405481466747,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0,
+    "benign_ids_blocked": 0.0
+   }
+  },
+  "rot10": {
+   "w0": {
+    "attack_blocked": 0.02668148971650917,
+    "usd_leaked": 16.76368773703379,
+    "usd_leaked_capped": 3.345830039422146,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.002015650936684847,
+    "benign_ids_blocked": 0.0026595744680851063
+   },
+   "w5": {
+    "attack_blocked": 0.0,
+    "usd_leaked": 17.123430861606852,
+    "usd_leaked_capped": 3.421405481466747,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0010671093194213896,
+    "benign_ids_blocked": 0.002216312056737589
+   },
+   "w10": {
+    "attack_blocked": 0.0,
+    "usd_leaked": 17.123430861606852,
+    "usd_leaked_capped": 3.421405481466747,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.00035570310647379654,
+    "benign_ids_blocked": 0.0008865248226950354
+   },
+   "w20": {
+    "attack_blocked": 0.0,
+    "usd_leaked": 17.123430861606852,
+    "usd_leaked_capped": 3.421405481466747,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0,
+    "benign_ids_blocked": 0.0
+   }
+  },
+  "rot30": {
+   "w0": {
+    "attack_blocked": 0.6029493509466043,
+    "usd_leaked": 7.006452776378027,
+    "usd_leaked_capped": 1.3917172068481318,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.002015650936684847,
+    "benign_ids_blocked": 0.0026595744680851063
+   },
+   "w5": {
+    "attack_blocked": 0.5303273060196841,
+    "usd_leaked": 8.083927984793931,
+    "usd_leaked_capped": 1.6127999376500106,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0010671093194213896,
+    "benign_ids_blocked": 0.002216312056737589
+   },
+   "w10": {
+    "attack_blocked": 0.45116568027989407,
+    "usd_leaked": 9.392785790595319,
+    "usd_leaked_capped": 1.8763095185336014,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.00035570310647379654,
+    "benign_ids_blocked": 0.0008865248226950354
+   },
+   "w20": {
+    "attack_blocked": 0.2882320243272406,
+    "usd_leaked": 12.120233588274461,
+    "usd_leaked_capped": 2.424395612020313,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0,
+    "benign_ids_blocked": 0.0
+   }
+  },
+  "rot100": {
+   "w0": {
+    "attack_blocked": 0.8742765588725763,
+    "usd_leaked": 2.17990739500476,
+    "usd_leaked_capped": 0.43471408796742506,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.002015650936684847,
+    "benign_ids_blocked": 0.0026595744680851063
+   },
+   "w5": {
+    "attack_blocked": 0.8521400778210116,
+    "usd_leaked": 2.5494836086486052,
+    "usd_leaked_capped": 0.5086182570626192,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0010671093194213896,
+    "benign_ids_blocked": 0.002216312056737589
+   },
+   "w10": {
+    "attack_blocked": 0.829709315632868,
+    "usd_leaked": 2.9104371791028862,
+    "usd_leaked_capped": 0.5818119142630485,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.00035570310647379654,
+    "benign_ids_blocked": 0.0008865248226950354
+   },
+   "w20": {
+    "attack_blocked": 0.779845011934735,
+    "usd_leaked": 3.768719903898286,
+    "usd_leaked_capped": 0.7532285478931766,
+    "usd_attack_total": 17.123430861606852,
+    "benign_blocked": 0.0,
+    "benign_ids_blocked": 0.0
+   }
+  }
+ }
+}

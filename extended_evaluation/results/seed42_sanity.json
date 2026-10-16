@@ -1,0 +1,7 @@
+{
+ "seed": 42,
+ "std_requests": 484.2495941066947,
+ "detection_count": 10,
+ "share_attack_rows_within_one_unit": 0.3871097819147149,
+ "predicted_accuracy": 0.6128902180852851
+}

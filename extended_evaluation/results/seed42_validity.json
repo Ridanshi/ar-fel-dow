@@ -1,0 +1,60 @@
+{
+ "n_attack_rows": 29759,
+ "pgdA_unconstrained": {
+  "fraction_rows_fully_valid": 0.18905205148022447,
+  "per_feature_violation_rate": {
+   "SubmitTime": 0.11804832151617999,
+   "InvocationDelay": 0.07345676938069155,
+   "ResponseDelay": 0.3504822070634094,
+   "FunctionDuration": 0.11038677374911791,
+   "ActiveFunctionsAtResponse": 0.18391074968916965,
+   "maxcpu": 0.4456802983971236,
+   "avgcpu": 0.0542356934036762,
+   "p95maxcpu": 0.22541080009408918,
+   "vmcorecountbucket": 0.26758291609261065,
+   "vmmemorybucket": 0.28330925098289594,
+   "ip_request_sequence_number": 0.37971706038509356,
+   "vmcategory_Delay-insensitive": 0.2975234382875769,
+   "vmcategory_Interactive": 0.4198393763231291,
+   "vmcategory_Unkown": 0.4554588527840317,
+   "functionTrigger_http": 0.40192882825363757,
+   "functionTrigger_notification": 0.5191370677778151,
+   "functionTrigger_sql": 0.1325313350583017,
+   "functionTrigger_storage": 0.4395308982156658,
+   "functionTrigger_stream": 0.26845660136429317
+  },
+  "acc_plain_all_rows": 0.6130582344836856,
+  "acc_plain_valid_rows": 1.0,
+  "acc_plain_invalid_rows": 0.5228525255873699,
+  "acc_pgd_at_all_rows": 1.0,
+  "acc_pgd_at_valid_rows": 1.0,
+  "acc_pgd_at_invalid_rows": 1.0,
+  "acc_pgd_gan_at_all_rows": 1.0,
+  "acc_pgd_gan_at_valid_rows": 1.0,
+  "acc_pgd_gan_at_invalid_rows": 1.0
+ },
+ "ganA": {
+  "fraction_rows_fully_valid": 0.6472999764777042,
+  "per_feature_violation_rate": {
+   "ip_request_sequence_number": 0.3527000235222958
+  },
+  "acc_plain_all_rows": 0.5348970059477806,
+  "acc_plain_valid_rows": 0.8263510356642267,
+  "acc_plain_invalid_rows": 0.0,
+  "acc_pgd_at_all_rows": 0.8857824523673511,
+  "acc_pgd_at_valid_rows": 0.826091470695115,
+  "acc_pgd_at_invalid_rows": 0.9953315548780488,
+  "acc_pgd_gan_at_all_rows": 1.0,
+  "acc_pgd_gan_at_valid_rows": 1.0,
+  "acc_pgd_gan_at_invalid_rows": 1.0
+ },
+ "pgd_range_clipped": {
+  "plain": 0.6128902180852851,
+  "pgd_at": 0.6624886588931079,
+  "pgd_gan_at": 0.9998319836015995
+ },
+ "ip_feature": {
+  "std_requests_(1 standardized unit)": 484.2495941166378,
+  "mean_shift_pgd_unconstrained_in_requests": -392.76630456018376
+ }
+}

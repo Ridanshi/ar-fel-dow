@@ -1,0 +1,177 @@
+{
+ "n_attack_test_rows": 29759,
+ "attack_requests_per_hour_in_dataset": 8747.04235795718,
+ "assumptions": {
+  "paper_vm_memory_bucket": {
+   "mean_cost_per_attack_invocation_usd": 0.0005597906167841123,
+   "scenarios": {
+    "pgdA_transfer_unconstrained": {
+     "plain": {
+      "miss_rate_clean": 0.007392721529621291,
+      "miss_rate_adversarial": 0.3869417655163144,
+      "extra_usd_per_attack_invocation": 0.00021305049222293648,
+      "extra_usd_per_1M_attack_invocations": 213.0504922229365,
+      "extra_usd_per_hour_at_dataset_attack_rate": 1.8635616798576522,
+      "extra_usd_per_hour_at_100x_dataset_attack_rate": 186.3561679857652
+     },
+     "pgd_at": {
+      "miss_rate_clean": 0.008804059276185355,
+      "miss_rate_adversarial": 0.0,
+      "extra_usd_per_attack_invocation": -5.106159963192943e-06,
+      "extra_usd_per_1M_attack_invocations": -5.106159963192943,
+      "extra_usd_per_hour_at_dataset_attack_rate": -0.04466379748455375,
+      "extra_usd_per_hour_at_100x_dataset_attack_rate": -4.466379748455375
+     },
+     "pgd_gan_at": {
+      "miss_rate_clean": 0.011593131489633389,
+      "miss_rate_adversarial": 0.0,
+      "extra_usd_per_attack_invocation": -6.591895740160733e-06,
+      "extra_usd_per_1M_attack_invocations": -6.591895740160733,
+      "extra_usd_per_hour_at_dataset_attack_rate": -0.057659591258423425,
+      "extra_usd_per_hour_at_100x_dataset_attack_rate": -5.765959125842342
+     }
+    },
+    "ip_counter_only_blackbox": {
+     "plain": {
+      "miss_rate_clean": 0.009666666666666667,
+      "miss_rate_adversarial": 0.38266666666666665,
+      "extra_usd_per_attack_invocation": 0.0002079014392349507,
+      "extra_usd_per_1M_attack_invocations": 207.90143923495071,
+      "extra_usd_per_hour_at_dataset_attack_rate": 1.8185226952683746,
+      "extra_usd_per_hour_at_100x_dataset_attack_rate": 181.85226952683746
+     },
+     "pgd_at": {
+      "miss_rate_clean": 0.010333333333333333,
+      "miss_rate_adversarial": 0.383,
+      "extra_usd_per_attack_invocation": 0.00020757339986282548,
+      "extra_usd_per_1M_attack_invocations": 207.57339986282548,
+      "extra_usd_per_hour_at_dataset_attack_rate": 1.8156533209853176,
+      "extra_usd_per_hour_at_100x_dataset_attack_rate": 181.56533209853177
+     },
+     "pgd_gan_at": {
+      "miss_rate_clean": 0.014333333333333333,
+      "miss_rate_adversarial": 0.384,
+      "extra_usd_per_attack_invocation": 0.00020549177800459489,
+      "extra_usd_per_1M_attack_invocations": 205.4917780045949,
+      "extra_usd_per_hour_at_dataset_attack_rate": 1.797445286418125,
+      "extra_usd_per_hour_at_100x_dataset_attack_rate": 179.7445286418125
+     }
+    }
+   }
+  },
+  "capped_at_lambda_max_10240MB": {
+   "mean_cost_per_attack_invocation_usd": 0.00011186281578492097,
+   "scenarios": {
+    "pgdA_transfer_unconstrained": {
+     "plain": {
+      "miss_rate_clean": 0.007392721529621291,
+      "miss_rate_adversarial": 0.3869417655163144,
+      "extra_usd_per_attack_invocation": 4.25533914632465e-05,
+      "extra_usd_per_1M_attack_invocations": 42.5533914632465,
+      "extra_usd_per_hour_at_dataset_attack_rate": 0.37221631760375057,
+      "extra_usd_per_hour_at_100x_dataset_attack_rate": 37.221631760375054
+     },
+     "pgd_at": {
+      "miss_rate_clean": 0.008804059276185355,
+      "miss_rate_adversarial": 0.0,
+      "extra_usd_per_attack_invocation": -1.0145756346527112e-06,
+      "extra_usd_per_1M_attack_invocations": -1.0145756346527113,
+      "extra_usd_per_hour_at_dataset_attack_rate": -0.008874536051658553,
+      "extra_usd_per_hour_at_100x_dataset_attack_rate": -0.8874536051658553
+     },
+     "pgd_gan_at": {
+      "miss_rate_clean": 0.011593131489633389,
+      "miss_rate_adversarial": 0.0,
+      "extra_usd_per_attack_invocation": -1.3170178623448877e-06,
+      "extra_usd_per_1M_attack_invocations": -1.3170178623448878,
+      "extra_usd_per_hour_at_dataset_attack_rate": -0.011520011028116952,
+      "extra_usd_per_hour_at_100x_dataset_attack_rate": -1.1520011028116952
+     }
+    },
+    "ip_counter_only_blackbox": {
+     "plain": {
+      "miss_rate_clean": 0.009666666666666667,
+      "miss_rate_adversarial": 0.38266666666666665,
+      "extra_usd_per_attack_invocation": 4.1596766684928136e-05,
+      "extra_usd_per_1M_attack_invocations": 41.596766684928134,
+      "extra_usd_per_hour_at_dataset_attack_rate": 0.36384868014712846,
+      "extra_usd_per_hour_at_100x_dataset_attack_rate": 36.38486801471284
+     },
+     "pgd_at": {
+      "miss_rate_clean": 0.010333333333333333,
+      "miss_rate_adversarial": 0.383,
+      "extra_usd_per_attack_invocation": 4.15381423003699e-05,
+      "extra_usd_per_1M_attack_invocations": 41.5381423003699,
+      "extra_usd_per_hour_at_dataset_attack_rate": 0.3633358901721884,
+      "extra_usd_per_hour_at_100x_dataset_attack_rate": 36.33358901721884
+     },
+     "pgd_gan_at": {
+      "miss_rate_clean": 0.014333333333333333,
+      "miss_rate_adversarial": 0.384,
+      "extra_usd_per_attack_invocation": 4.1140316787588175e-05,
+      "extra_usd_per_1M_attack_invocations": 41.140316787588176,
+      "extra_usd_per_hour_at_dataset_attack_rate": 0.3598560935608106,
+      "extra_usd_per_hour_at_100x_dataset_attack_rate": 35.98560935608106
+     }
+    }
+   }
+  },
+  "fixed_1024MB": {
+   "mean_cost_per_attack_invocation_usd": 1.8324604166448664e-05,
+   "scenarios": {
+    "pgdA_transfer_unconstrained": {
+     "plain": {
+      "miss_rate_clean": 0.007392721529621291,
+      "miss_rate_adversarial": 0.3869417655163144,
+      "extra_usd_per_attack_invocation": 6.956359594778052e-06,
+      "extra_usd_per_1M_attack_invocations": 6.956359594778052,
+      "extra_usd_per_hour_at_dataset_attack_rate": 0.060847572032705466,
+      "extra_usd_per_hour_at_100x_dataset_attack_rate": 6.084757203270547
+     },
+     "pgd_at": {
+      "miss_rate_clean": 0.008804059276185355,
+      "miss_rate_adversarial": 0.0,
+      "extra_usd_per_attack_invocation": -1.625538234387832e-07,
+      "extra_usd_per_1M_attack_invocations": -0.1625538234387832,
+      "extra_usd_per_hour_at_dataset_attack_rate": -0.0014218651790669293,
+      "extra_usd_per_hour_at_100x_dataset_attack_rate": -0.14218651790669293
+     },
+     "pgd_gan_at": {
+      "miss_rate_clean": 0.011593131489633389,
+      "miss_rate_adversarial": 0.0,
+      "extra_usd_per_attack_invocation": -2.1434780220386546e-07,
+      "extra_usd_per_1M_attack_invocations": -0.21434780220386546,
+      "extra_usd_per_hour_at_dataset_attack_rate": -0.0018749093052122384,
+      "extra_usd_per_hour_at_100x_dataset_attack_rate": -0.18749093052122384
+     }
+    },
+    "ip_counter_only_blackbox": {
+     "plain": {
+      "miss_rate_clean": 0.009666666666666667,
+      "miss_rate_adversarial": 0.38266666666666665,
+      "extra_usd_per_attack_invocation": 6.832407404368585e-06,
+      "extra_usd_per_1M_attack_invocations": 6.832407404368585,
+      "extra_usd_per_hour_at_dataset_attack_rate": 0.059763356972832284,
+      "extra_usd_per_hour_at_100x_dataset_attack_rate": 5.976335697283228
+     },
+     "pgd_at": {
+      "miss_rate_clean": 0.010333333333333333,
+      "miss_rate_adversarial": 0.383,
+      "extra_usd_per_attack_invocation": 6.826490037384106e-06,
+      "extra_usd_per_1M_attack_invocations": 6.826490037384105,
+      "extra_usd_per_hour_at_dataset_attack_rate": 0.05971159751317146,
+      "extra_usd_per_hour_at_100x_dataset_attack_rate": 5.971159751317146
+     },
+     "pgd_gan_at": {
+      "miss_rate_clean": 0.014333333333333333,
+      "miss_rate_adversarial": 0.384,
+      "extra_usd_per_attack_invocation": 6.771467009582784e-06,
+      "extra_usd_per_1M_attack_invocations": 6.771467009582784,
+      "extra_usd_per_hour_at_dataset_attack_rate": 0.05923030875833024,
+      "extra_usd_per_hour_at_100x_dataset_attack_rate": 5.923030875833025
+     }
+    }
+   }
+  }
+ }
+}
