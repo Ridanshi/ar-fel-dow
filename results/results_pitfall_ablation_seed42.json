@@ -1,0 +1,24 @@
+{
+  "seed": 42,
+  "group_with_count": null,
+  "row_with_count": {
+    "acc": 0.9942273771981399,
+    "attack_recall": 0.993211341653268,
+    "benign_recall": 0.9965769593956563
+  },
+  "group_no_count": {
+    "acc": 0.594314633358458,
+    "attack_recall": 0.46359084646661514,
+    "benign_recall": 0.8275965459342768
+  },
+  "row_no_count": {
+    "acc": 0.5748748374222745,
+    "attack_recall": 0.46640124543807265,
+    "benign_recall": 0.8257200188857413
+  },
+  "plain_pgd": 0.6130582344836856,
+  "plain_gan": 0.5353338485836218,
+  "reuse_pgd": 1.0,
+  "reuse_gan": 0.8893780032931214,
+  "reuse_clean": 0.9934532141703456
+}

@@ -12,11 +12,11 @@ Retargets an adversarial-resilient federated ensemble architecture (originally d
 ## What's here
 
 - `src/arfel_dow/` — the detection pipeline: stacked ensemble detector (XGBoost + RandomForest + CatBoost + MLP under a logistic-regression meta-learner), gradient and GAN-based adversarial attack suite, adversarial training defense, federated ensemble aggregation, LLM-pluggable narrative layer, and the Financial Robustness Gap metric (real AWS Lambda pricing).
-- `scripts/` — experiment entry points: full evaluation run, multi-seed statistical validation, the CatBoost-substitution ablation, generalization checks (cold-start / temporal split), the federated poisoning check, and figure generation.
+- `scripts/` — experiment entry points: full evaluation run, multi-seed statistical validation, the CatBoost-substitution ablation, generalization checks (cold-start / temporal split), the federated poisoning check, the evaluation-safeguard ablation (`scripts/run_pitfall_ablation.py`: row-level versus group-by-IP split, and adversarial-training rows disjoint from versus reused for evaluation; summarize with `scripts/aggregate_pitfall_ablation.py`), and figure generation.
 - `tests/` — unit tests for every module (`pytest`).
 - `data/fixtures/` — a small synthetic fixture used by the test suite. The real dataset (DoWTS, 187,087 rows) is not bundled here; see below.
 - `extended_evaluation/` — code and result files for the extended analysis: threat-model and defense-comparison experiments, cost analysis, billing-aware mitigations, a self-hosted OpenWhisk experiment, a second public dataset, and adversarial training against query-only attacks. See its own README.
-- `results/` — result files from the multi-seed run, the CatBoost ablation, the generalization checks, the federated poisoning check, and the direct train/test overfitting check, kept for reproducibility.
+- `results/` — result files from the multi-seed run, the CatBoost ablation, the generalization checks, the federated poisoning check, the direct train/test overfitting check, and the per-seed evaluation-safeguard ablation, kept for reproducibility.
 
 ## Dataset
 
