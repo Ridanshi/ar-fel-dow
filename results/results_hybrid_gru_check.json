@@ -1,0 +1,28 @@
+{
+  "baseline": {
+    "clean_accuracy": 0.9937563067608476,
+    "clean_attack_recall": 0.9932366289935036,
+    "clean_benign_recall": 0.9950205672223424,
+    "adversarial_accuracy_plain": 0.6378926759811337,
+    "adversarial_accuracy_robust": 1.0,
+    "adversarial_accuracy_plain_gan": 0.5101005606478598,
+    "adversarial_accuracy_robust_gan": 0.9007742279967963,
+    "baseline_clean_accuracy": 0.0,
+    "baseline_adversarial_accuracy": 0.0,
+    "financial_robustness_gap_plain": 2.229442965769381,
+    "financial_robustness_gap_robust": -0.04721622841459892
+  },
+  "hybrid": {
+    "clean_accuracy": 0.9935671039354188,
+    "clean_attack_recall": 0.9928806620984248,
+    "clean_benign_recall": 0.995237064299632,
+    "adversarial_accuracy_plain": 0.637536709086055,
+    "adversarial_accuracy_robust": 1.0,
+    "adversarial_accuracy_plain_gan": 0.506006941354454,
+    "adversarial_accuracy_robust_gan": 0.9007742279967963,
+    "baseline_clean_accuracy": 0.0,
+    "baseline_adversarial_accuracy": 0.0,
+    "financial_robustness_gap_plain": 2.2275874293942555,
+    "financial_robustness_gap_robust": -0.05118916799262073
+  }
+}
