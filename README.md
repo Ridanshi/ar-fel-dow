@@ -4,10 +4,6 @@ Adversarial-robustness evaluation of a Denial-of-Wallet (DoW) detector for serve
 
 Retargets an adversarial-resilient federated ensemble architecture (originally designed for cloud intrusion detection) at DoW attack detection, and evaluates it under gradient-based (FGSM, PGD, Carlini & Wagner) and GAN-based adaptive adversarial attacks, in addition to the clean-data accuracy figure most prior DoW detection work reports on its own.
 
-## Authors
-
-- Ridanshi Agarwal
-
 ## What's here
 
 - `src/arfel_dow/` — the detection pipeline: stacked ensemble detector (XGBoost + RandomForest + CatBoost + MLP under a logistic-regression meta-learner), gradient and GAN-based adversarial attack suite, adversarial training defense, federated ensemble aggregation, LLM-pluggable narrative layer, and the Financial Robustness Gap metric (real AWS Lambda pricing).
