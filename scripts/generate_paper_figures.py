@@ -48,8 +48,8 @@ def figure1_architecture():
         ax.add_patch(a)
 
     # Row 1 (top): dataset -> feature engineering, centered
-    dataset = box(1.0, 11.7, 3.2, 1.1, "DoWTS Dataset\n(187,088 rows,\nMendeley, CC BY 4.0)")
-    features = box(5.0, 11.7, 3.7, 1.1, "Feature Engineering\n(19 columns + causal\nIP-frequency feature)")
+    dataset = box(1.0, 11.7, 3.2, 1.1, "DoWTS Dataset\n(187,087 rows,\nMendeley, CC BY 4.0)")
+    features = box(5.0, 11.7, 3.7, 1.1, "Feature Engineering\n(19 raw columns + causal\nIP-frequency feature)")
     arrow((dataset[6], dataset[7]), (features[4], features[5]))
 
     # Row 2: scaler, centered under feature engineering
@@ -104,9 +104,8 @@ def figure1_architecture():
     )
     ax.add_patch(loop_arrow)
 
-    ax.set_title("Figure 1. AR-FEL-DoW System Architecture", fontsize=13, fontweight="bold", pad=16)
     fig.tight_layout()
-    fig.savefig(f"{OUT_DIR}/figure1_architecture.png", dpi=200, bbox_inches="tight")
+    fig.savefig(f"{OUT_DIR}/figure1_architecture.png", dpi=300, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -128,11 +127,10 @@ def figure2_ip_ablation():
     ax.set_ylim(0, 112)
     ax.set_xticks(x)
     ax.set_xticklabels(labels)
-    ax.set_title("Figure 2. Contribution of the Causal IP Request-Frequency\nFeature (Section 6.2, seed 42)", fontsize=11.5, fontweight="bold")
     ax.legend(loc="lower right", fontsize=9)
     ax.grid(axis="y", linestyle=":", alpha=0.5)
     fig.tight_layout()
-    fig.savefig(f"{OUT_DIR}/figure2_ip_ablation.png", dpi=200, bbox_inches="tight")
+    fig.savefig(f"{OUT_DIR}/figure2_ip_ablation.png", dpi=300, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -151,14 +149,13 @@ def figure3_baseline_comparison():
     ax.set_xticklabels(["Clean", "Under PGD attack"])
     ax.set_ylabel("Accuracy (%)")
     ax.set_ylim(0, 112)
-    ax.set_title("Figure 3. Detector vs. Production Rate-Limiting Baseline\n(mean ± std, 5 seeds; Section 6.5)", fontsize=11.5, fontweight="bold")
     ax.legend(loc="upper right", fontsize=9)
     ax.grid(axis="y", linestyle=":", alpha=0.5)
     for i, (a, b) in enumerate(zip(detector_vals, rate_limit_mean)):
         ax.annotate(f"{a:.1f}", xy=(x[i] - width / 2, a), xytext=(0, 3), textcoords="offset points", ha="center", fontsize=8.5)
         ax.annotate(f"{b:.1f}", xy=(x[i] + width / 2, b + rate_limit_std[i]), xytext=(0, 3), textcoords="offset points", ha="center", fontsize=8.5)
     fig.tight_layout()
-    fig.savefig(f"{OUT_DIR}/figure3_baseline_comparison.png", dpi=200, bbox_inches="tight")
+    fig.savefig(f"{OUT_DIR}/figure3_baseline_comparison.png", dpi=300, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -175,13 +172,13 @@ def figure4_financial_gap():
     for b, m, s in zip(bars, means, stds):
         va = "bottom" if m >= 0 else "top"
         offset = 0.15 if m >= 0 else -0.15
-        ax.annotate(f"\\${m:+.2f} ± \\${s:.2f}", xy=(b.get_x() + b.get_width() / 2, m + (s if m >= 0 else -s) + offset),
+        sgn = ("+" if m >= 0 else "−") + "\$" + f"{abs(m):.2f}"
+        ax.annotate(f"{sgn} ± \${s:.2f}", xy=(b.get_x() + b.get_width() / 2, m + (s if m >= 0 else -s) + offset),
                     ha="center", va=va, fontsize=9.5)
     ax.set_ylabel("Financial Robustness Gap (USD, test-slice attack rows)")
-    ax.set_title("Figure 4. Financial Robustness Gap: Undefended vs.\nAdversarially Trained Detector (mean ± std, 5 seeds)", fontsize=11.5, fontweight="bold")
     ax.grid(axis="y", linestyle=":", alpha=0.5)
     fig.tight_layout()
-    fig.savefig(f"{OUT_DIR}/figure4_financial_gap.png", dpi=200, bbox_inches="tight")
+    fig.savefig(f"{OUT_DIR}/figure4_financial_gap.png", dpi=300, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -206,10 +203,6 @@ def figure5_results():
     ax.axhline(0.51, color="#7f8c8d", linestyle="--", linewidth=1.2, label="Rate-limit baseline (~0.0-0.5%)")
 
     ax.set_ylabel("Accuracy (%)")
-    ax.set_title(
-        "Figure 5. Detector Accuracy Under Clean and Adversarial Conditions\n(mean ± std, 5 seeds)",
-        fontsize=11.5, fontweight="bold",
-    )
     ax.set_xticks(x)
     ax.set_xticklabels(conditions)
     ax.set_ylim(0, 112)
@@ -223,7 +216,7 @@ def figure5_results():
                         textcoords="offset points", ha="center", fontsize=8.5)
 
     fig.tight_layout()
-    fig.savefig(f"{OUT_DIR}/figure5_results.png", dpi=200, bbox_inches="tight")
+    fig.savefig(f"{OUT_DIR}/figure5_results.png", dpi=300, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -260,9 +253,8 @@ def figure6_seed_stability():
     ax2.legend(fontsize=8, loc="center right")
     ax2.grid(linestyle=":", alpha=0.5)
 
-    fig.suptitle("Figure 6. Per-Seed Accuracy Across All 5 Independent Runs (Section 6.8)", fontsize=12, fontweight="bold")
     fig.tight_layout()
-    fig.savefig(f"{OUT_DIR}/figure6_seed_stability.png", dpi=200, bbox_inches="tight")
+    fig.savefig(f"{OUT_DIR}/figure6_seed_stability.png", dpi=300, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -285,14 +277,13 @@ def figure7_catboost_isolation():
     ax.set_xticklabels(metrics, fontsize=9.5)
     ax.set_ylabel("Accuracy (%)")
     ax.set_ylim(0, 112)
-    ax.set_title("Figure 7. CatBoost vs. GradientBoostingClassifier,\nIsolated Substitution Ablation (Section 6.9, seed 42)", fontsize=11.5, fontweight="bold")
     ax.legend(loc="upper right", fontsize=9)
     ax.grid(axis="y", linestyle=":", alpha=0.5)
     for i, (a, b) in enumerate(zip(catboost, gbm)):
         ax.annotate(f"{a:g}", xy=(x[i] - width / 2, a), xytext=(0, 3), textcoords="offset points", ha="center", fontsize=8.5)
         ax.annotate(f"{b:g}", xy=(x[i] + width / 2, b), xytext=(0, 3), textcoords="offset points", ha="center", fontsize=8.5)
     fig.tight_layout()
-    fig.savefig(f"{OUT_DIR}/figure7_catboost_isolation.png", dpi=200, bbox_inches="tight")
+    fig.savefig(f"{OUT_DIR}/figure7_catboost_isolation.png", dpi=300, bbox_inches="tight")
     plt.close(fig)
 
 
