@@ -7,7 +7,6 @@ Retargets an adversarial-resilient federated ensemble architecture (originally d
 ## Authors
 
 - Ridanshi Agarwal
-- Hritwik Bali
 
 ## What's here
 
